@@ -1,0 +1,71 @@
+{
+  "name": "painstaking-sink-seem-p024y",
+  "productName": "painstaking-sink-seem-p024y",
+  "description": "My Electron application description",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "Salvatore",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saxxas88/electron-forge-updater.git"
+  },
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "dependencies": {
+    "electron-log": "^5.2.0",
+    "update-electron-app": "^3.0.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "7.3.1",
+    "@electron-forge/maker-deb": "7.3.1",
+    "@electron-forge/maker-rpm": "7.3.1",
+    "@electron-forge/maker-squirrel": "7.3.1",
+    "@electron-forge/maker-zip": "7.3.1",
+    "@electron-forge/publisher-github": "^7.5.0",
+    "electron": "25.4.0"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel"
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ],
+      "publishers": [
+        {
+          "name": "@electron-forge/publisher-github",
+          "config": {
+            "repository": {
+              "owner": "saxxas88",
+              "name": "electron-forge-updater"
+            },
+            "authToken": "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",
+            "prerelease": true
+          }
+        }
+      ]
+    }
+  },
+  "license": "MIT"
+}
