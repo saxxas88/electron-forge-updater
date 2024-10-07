@@ -6,7 +6,7 @@ const path = require("path");
 updateElectronApp({
   updateSource: {
     type: UpdateSourceType.ElectronPublicUpdateService,
-    repo: "https://github.com/saxxas88/electron-forge-updater",
+    repo: "saxxas88/electron-forge-updater",
   },
   updateInterval: "1 hour",
   logger: require("electron-log"),
