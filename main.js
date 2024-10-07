@@ -7,7 +7,7 @@ updateElectronApp({
   updateSource: {
     type: UpdateSourceType.ElectronPublicUpdateService,
     repo: "saxxas88/electron-forge-updater",
-    host:"https://github.com"
+    host:"https://update.electronjs.org"
   },
   updateInterval: "1 hour",
   logger: require("electron-log"),
