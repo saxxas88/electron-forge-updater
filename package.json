@@ -4,7 +4,7 @@
   "description": "My Electron application description",
   "keywords": [],
   "main": "./main.js",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Salvatore",
   "repository": {
     "type": "git",
@@ -60,7 +60,7 @@
               "owner": "saxxas88",
               "name": "electron-forge-updater"
             },
-            "authToken": "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",
+            "authToken": "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",
             "prerelease": false
           }
         }

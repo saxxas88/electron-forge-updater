@@ -16,5 +16,5 @@ window.addEventListener('DOMContentLoaded', () => {
     replaceText(`${type}-version`, process.versions[type])
   }
   
-  replaceText(`app-version`, 4)
+  replaceText(`app-version`, 7)
 })
