@@ -3,7 +3,7 @@ const { app, BrowserWindow } = require("electron");
 const { updateElectronApp, UpdateSourceType } = require("update-electron-app");
 const path = require("path");
 
-updateElectronApp({
+/* updateElectronApp({
   updateSource: {
     type: UpdateSourceType.ElectronPublicUpdateService,
     repo: "saxxas88/electron-forge-updater",
@@ -11,9 +11,9 @@ updateElectronApp({
   },
   updateInterval: "1 hour",
   logger: require("electron-log"),
-  /* notifyUser:true */
-});
-
+   notifyUser:true 
+}); */
+updateElectronApp()
 function createWindow() {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
