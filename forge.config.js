@@ -28,7 +28,7 @@ module.exports = {
               "owner": "saxxas88",
               "name": "electron-forge-updater"
             },
-            "authToken": "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",
+            "authToken": process.env.GITHUB_TOKEN,
             "prerelease": false
           }
         }
