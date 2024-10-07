@@ -60,8 +60,8 @@
               "owner": "saxxas88",
               "name": "electron-forge-updater"
             },
-            "authToken": "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",
-            "prerelease": true
+            "authToken": "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",
+            "prerelease": false
           }
         }
       ]
